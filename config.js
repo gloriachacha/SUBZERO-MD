@@ -10,22 +10,22 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "",  // Your bot's session ID (keep it secure)
-    PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
+    SESSION_ID: process.env.SESSION_ID || "SUBZERO-MD~BTC0x0C8AqP2KDWIQ4Ri",  // Your bot's session ID (keep it secure)
+    PREFIX: getConfig("PREFIX") || "2",  // Command prefix (e.g., "., / ! * - +")
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "SUBZERO-MD",  // Bot's display name
-    MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
+    MODE: getConfig("MODE") || process.env.MODE || "private",        // Bot mode: public/private/group/inbox
     REPO: process.env.REPO || "https://github.com/mrfrankofcc/SUBZERO-MD",  // Bot's GitHub repo
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",  // Bot's BAILEYS
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "263719647303",  // Owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "Mr Frank",           // Owner's name
-    DEV: process.env.DEV || "263719647303",                     // Developer's contact number
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "254732994872",  // Owner's WhatsApp number
+    OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "∅ÑË ĪÑ Ã MĪLLÍ∅Ñ",           // Owner's name
+    DEV: process.env.DEV || "254732994872",                     // Developer's contact number
     DEVELOPER_NUMBER: '263719647303@s.whatsapp.net',            // Developer's WhatsApp ID
 
     // ===== AUTO-RESPONSE SETTINGS =====
     AUTO_REPLY: process.env.AUTO_REPLY || "false",              // Enable/disable auto-reply
-    AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",// Reply to status updates?
+    AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "true",// Reply to status updates?
     AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SUBZERO BOT VIEWED YOUR STATUS 🤖*",  // Status reply message
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
 
@@ -40,13 +40,13 @@ module.exports = {
     
     // ===== MEDIA & AUTOMATION =====
     AUTO_VOICE: process.env.AUTO_VOICE || "false",              // Auto-send voice messages?
-    AUTO_RECORDING: process.env.AUTO_RECORDING || "false",      // Auto-record voice notes?
-    AUTO_TYPING: process.env.AUTO_TYPING || "false",            // Show typing indicator?
+    AUTO_RECORDING: process.env.AUTO_RECORDING || "true",      // Auto-record voice notes?
+    AUTO_TYPING: process.env.AUTO_TYPING || "true",            // Show typing indicator?
     BOT_IMAGE: getConfig("BOT_IMAGE") || "https://files.catbox.moe/qla34k.jpg",  // Bot's "alive" image
 
     // ===== SECURITY & ANTI-FEATURES =====
     ANTI_DELETE: process.env.ANTI_DELETE || "true",
-    ANTI_CALL: getConfig("ANTI_CALL") || process.env.ANTI_CALL || "true",
+    ANTI_CALL: getConfig("ANTI_CALL") || process.env.ANTI_CALL || "false",
     ANTI_BAD: process.env.ANTI_BAD || "false",                  // Block bad words?
     ANTI_LINK: process.env.ANTI_LINK || "true",                 // Block links in groups?
     ANTI_VV: process.env.ANTI_VV || "true",                     // Block view-once messages?
@@ -57,7 +57,7 @@ module.exports = {
 
     // ===== BOT BEHAVIOR & APPEARANCE =====
     FOOTER: process.env.FOOTER || "*© Gᴇɴᴇʀᴀᴛᴇᴅ ʙʏ Sᴜʙᴢᴇʀᴏ*",  // Bot description
-    PUBLIC_MODE: process.env.PUBLIC_MODE || "true",              // Allow public commands?
+    PUBLIC_MODE: process.env.PUBLIC_MODE || "false",              // Allow public commands?
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "true",        // Show bot as always online?
     AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true", // React to status updates?
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true", // VIEW to status updates?
